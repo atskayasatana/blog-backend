@@ -92,15 +92,13 @@ USE_L10N = True
 
 USE_TZ = True
 
-STATIC_URL = os.getenv('STATIC_URL', '/static/')
+STATIC_URL = os.getenv('STATIC_URL','/static/')
 
-STATICFILES_DIRS = (os.path.join(BASE_DIR, "static/"), os.path.join(BASE_DIR, "static/fonts/"),
-                    os.path.join(BASE_DIR, "static/img/"), os.path.join(BASE_DIR, "static/img/banner"),
-                    os.path.join(BASE_DIR, "static/img/blog"), os.path.join(BASE_DIR, "static/img/blog/blog-slider/") )
+STATIC_ROOT = os.getenv('STATIC_ROOT')
+
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "static"), ]
 
 MEDIA_ROOT = os.getenv("MEDIA_ROOT", os.path.join(BASE_DIR, 'media'))
-
-STATIC_ROOT = os.path.join(BASE_DIR, "/staticroot/")
 
 MEDIA_URL = os.getenv('MEDIA_URL', '/media/')
 
