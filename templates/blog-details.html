@@ -11,7 +11,7 @@
             {% if post.image_url is not None %}
             <img class="img-fluid" src="{{post.image_url}}" alt="{{post.slug}}">
             {% else %}
-            <img class="img-fluid" src="{%static 'blog.png' %}" alt="Blog Logo">
+            <img class="img-fluid" src="{%static '/img/banner/blog.png' %}" alt="Blog Logo">
             {% endif %}
             <h4>{{post.title}}</h4>
             <div class="user_details">
