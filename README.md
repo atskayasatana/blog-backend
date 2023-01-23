@@ -9,7 +9,6 @@
 - Скачайте код
 - Скачайте данные для сайта [отсюда](https://dvmn.org/media/modules_dist/liza-backend-data.zip) и разархивируйте в директорию проекта.
 - Установите зависимости командой `pip install -r requirements.txt`
-- Загрузите файлы статики `python manage.py collectstatic`
 - Запустите сервер командой `python3 manage.py runserver`
 
 После этого переходите по ссылке [127.0.0.1:8000](http://127.0.0.1:8000), вы увидите главную страницу.
